@@ -202,13 +202,25 @@ nav {
     color: #9f8189;
 
 }  
+#circle
+{
+  width:200px;
+  height:200px;
+  border-radius: 100%;
+  background:url(../img/logo.jpg) center no-repeat; 
+  margin-left: 41%;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  
+}
 .circletag{
     margin-left: 41%;
     text-align: center;
 
     width: 200px;
     height: 200px;
-    background-image: url(../logo.jpg);
+    background-image: url(../img/logo.jpg);
     /* background: #E6E7ED; */
     background-size: cover;
     display: block;
@@ -225,6 +237,7 @@ nav {
     padding-right: 70px;
     padding-left: 70px;
     padding-top: 20px;
+    overflow: hidden;
 
 }
 
@@ -410,4 +423,9 @@ nav {
 #cv .box p{
 	color: #888;
 }
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
 
