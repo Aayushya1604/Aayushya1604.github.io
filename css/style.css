@@ -310,92 +310,125 @@ nav {
 /* *{ border: 1px solid red; } */
 
 
-#cv{
-	padding-top: 50px;
-	padding-bottom: 80px;
-	background: #F7F7F7;
-}
-
-#cv  hr{
-    height: 1px;
-    border: none;
-    background: #DDD;
-    margin: 50px auto;
-}
-
-#cv .row h3{
-	border-bottom: 3px solid #11ABB0;
-	font-size: 24px;
-	padding-bottom: 5px;
-    width: min-content;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: -ms-min-content;
-    width: -o-min-content;
-	margin-bottom: 50px;
-}
-
-#cv .row{
-	margin-bottom: 80px;
-}
-
-.skills + .skills{
-    margin-top: 60px;
-
-}
-
-.skills > h4{
-    color: #11ABB0;
-    margin-bottom: 40px;
-}
-
-#cv .skill-item + .skill-item{
-	margin-top: 30px;
-}
-
-#cv .skill-item > h4{
-	font-size: 16px;
-	color: #222;
-}
-
-#cv .skill-item > .progress{
-	height: 40px;
-	background: #DDD;
-}
-
-#cv .skill-item .progress-bar{
-	background: #222;
-}
-
-.exp + .exp{
-    margin-top: 60px;
-
-}
-
-.exp > h4{
-    color: #11ABB0;
-    margin-bottom: 40px;
-}
-
-#cv .box + .box{
-    margin-top: 50px;
-}
-
-#cv .box h4{
-	font-size: 20px;
-	color: #222;
-}
-
-#cv .box h6{
-	color: #11ABB0;
-}
-
-#cv .box p{
-	color: #889;
-}
-
 @viewport {
     width: device-width ;
     zoom: 1.0 ;
   }
 
+
+  /* skills*/
+
+
+
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #F3ABB6;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #ffcad4;
+  }
+  .bar.back::before{
+    background-color: #ffe5d8;
+  }
+  
+  .bar.learning::before{
+    width: calc(100% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(60% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(95% - 10px);
+  }
+
+  .random-space {
+    padding-bottom: 50px;
+  }
+
+  /* socials */
+  @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 5px;
+  align-items: center;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	width: 40px;
+    height: 28px;
+	color: #000;
+	background-color: #FFF;
+	border: 1px solid #000;
+	padding-top: 12px;
+	border-radius: 22px;
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-o-border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+	color: #FFF;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+  
+  
