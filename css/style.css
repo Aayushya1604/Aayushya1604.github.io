@@ -23,7 +23,7 @@ html {
 
 
 .parallax-one {
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../web12.jpg) no-repeat center;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/web12.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 516px;
@@ -39,7 +39,7 @@ html {
 }
 
 .parallax-two {
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../web9.jpg) no-repeat center;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/web9.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 516px;
@@ -55,7 +55,7 @@ html {
 }
 
 .parallax-three {
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../web3.jpg) no-repeat center;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/web3.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 516px;
@@ -469,14 +469,12 @@ nav {
   margin-right: 100px;
   padding: 2px;
 
-
 }
 
 .skills {
   display: flex;
   flex-direction: column;
   align-self: center;
-
 }
 
 .skill {
