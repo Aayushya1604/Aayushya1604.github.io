@@ -411,7 +411,7 @@ nav {
   }
 
   .random-space {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 
   /* projects*/
@@ -455,5 +455,78 @@ nav {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+}
+
+/*testing */
+.u-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.skill {
+  margin: 1em 0;
+  position: relative;
+  width: 22.5em;
+}
+
+.skill__type {
+  color: #F3ABB6;
+  font-weight: 300;
+  font-size: .8em;
+  letter-spacing: .145em;
+  /* text-transform: uppercase; */
+  font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+
+  width: 5em;
+}
+
+.skill__outer-bar, .skill__inner-bar {
+  height: .75em;
+}
+
+.skill__outer-bar {
+  margin-top: 1em;
+  background: #EEE;
+}
+
+.skill__inner-bar {
+  animation: fillBar 1s forwards;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.skill__inner-bar--100 {
+  width: 100%;
+  background: #9F8189;
+}
+.skill__inner-bar--90 {
+  width: 90%;
+  background: #F3ABB6;
+}
+.skill__inner-bar--80 {
+  width: 80%;
+  background: #FFCAD4;
+}
+.skill__inner-bar--70 {
+  width: 80%;
+  background: #FFCAD4;
+}
+.skill__inner-bar--60 {
+  width: 90%;
+  background: #FFCAD4;
+}
+
+@keyframes fillBar {
+  to {
+      transform: scaleX(1);
   }
 }
