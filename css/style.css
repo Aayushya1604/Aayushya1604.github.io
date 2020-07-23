@@ -156,7 +156,7 @@ nav {
 
 .logo {
     flex: 1 1 auto;
-    margin-left: 10%;
+    margin-left: 5%;
     color: #F3ABB6;
     text-decoration: none;
 }
@@ -340,7 +340,7 @@ nav {
   /* skills*/
 
 
-
+/*
   @keyframes load{
     from {
       width: 0%
@@ -409,6 +409,7 @@ nav {
   .bar.expert::before{
     width: calc(95% - 10px);
   }
+  */
 
   .random-space {
     padding-bottom: 70px;
@@ -464,12 +465,16 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding-right: 25%;
+  padding-left: 25%;
+
 }
 
 .skills {
   display: flex;
   flex-direction: column;
   align-self: center;
+
 }
 
 .skill {
@@ -480,28 +485,33 @@ nav {
 
 .skill__type {
   color: #F3ABB6;
-  font-weight: 300;
+  font-weight: 3000;
   font-size: .8em;
   letter-spacing: .145em;
   /* text-transform: uppercase; */
   font-family: "Monument Extended", Arial, Helvetica, sans-serif;
 
-  width: 5em;
+  width: 50em;
 }
 
 .skill__outer-bar, .skill__inner-bar {
-  height: .75em;
+  height: 0.75em;
+  border-radius: 40%;
+
+
 }
 
 .skill__outer-bar {
   margin-top: 1em;
   background: #EEE;
+
 }
 
 .skill__inner-bar {
   animation: fillBar 1s forwards;
   transform: scaleX(0);
   transform-origin: 0 0;
+
 }
 
 .skill__inner-bar--100 {
@@ -520,10 +530,7 @@ nav {
   width: 80%;
   background: #FFCAD4;
 }
-.skill__inner-bar--60 {
-  width: 90%;
-  background: #FFCAD4;
-}
+
 
 @keyframes fillBar {
   to {
