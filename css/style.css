@@ -101,19 +101,7 @@ html {
     /* transform: translate(-50%, -50%); */
 }
 
-.parallax-one p, .parallax-two p, .parallax-three p {
-   
-    text-align: center;
-    padding-top: 250px;
-    color: #ffffff;
-    font-size: 15px;
-    margin: 0;
-    position: absolute; 
-    left: 50%;
-    transform: translate(-50%, 87%);
-    /* left: 40%; */
-    /* transform: translate(-50%, -50%); */
-}
+
 
 
 
@@ -176,16 +164,36 @@ nav {
     text-decoration: none;
 }
 
-.about-page h1 {
+.about-page h1{
     text-align: center;
     padding: 70px;
     font-size: 20px;
     padding-left: 25%;
     padding-right: 25%;
     color: #F3ABB6;
+    
 
-} 
-.about-page p {
+}
+
+.projects-page h1, .projects-page h2 {
+  text-align: center;
+  padding: 70px;
+  font-size: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
+  color: #F3ABB6;
+  
+}
+.projects-page h3 {
+  text-align: center;
+  /* padding: 70px; */
+  font-size: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
+  color: #F3ABB6;
+  text-decoration: none;
+}
+.about-page p, .projects-page p {
     text-align: center;
     padding: 50px;
     font-size: 17px;
@@ -194,7 +202,7 @@ nav {
     color: #9f8189;
 
 }  
-#circle
+#circle1
 {
   width:200px;
   height:200px;
@@ -209,11 +217,27 @@ nav {
   
 }
 
+#circle2 {
+  width:200px;
+  height:200px;
+  border-radius: 100%;
+  background:url(../img/rick_logo.png) center no-repeat; 
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  text-align: center;
+  margin: auto;
+  
+}
+
+
+
 
   
 #about img{
 	width: 180px;
 }
+
 .projects p {
     text-align: center;
     padding: 70px;
@@ -393,42 +417,46 @@ nav {
     padding-bottom: 50px;
   }
 
-  /* socials */
-  @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-
-a, a:hover {
-	text-decoration: none;
+  /* projects*/
+.row {
+  margin: 8px -16px;
 }
 
-.socialbtns, .socialbtns ul, .socialbtns li {
-  margin: 0;
-  padding: 5px;
-  align-items: center;
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
 }
 
-.socialbtns li {
-    list-style: none outside none;
-    display: inline-block;
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
 }
 
-.socialbtns .fa {
-	width: 40px;
-    height: 28px;
-	color: #000;
-	background-color: #FFF;
-	border: 1px solid #000;
-	padding-top: 12px;
-	border-radius: 22px;
-	-moz-border-radius: 22px;
-	-webkit-border-radius: 22px;
-	-o-border-radius: 22px;
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.socialbtns .fa:hover {
-	color: #FFF;
-	background-color: #000;
-	border: 1px solid #000;
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
 }
 
-  
-  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
