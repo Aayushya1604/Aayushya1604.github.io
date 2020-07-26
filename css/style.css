@@ -227,6 +227,15 @@ nav {
   
 }
 
+/* #rect {
+  background:url(../img/2002.png) center no-repeat; 
+
+} */
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 
 
