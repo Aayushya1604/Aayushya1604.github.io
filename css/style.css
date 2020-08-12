@@ -638,13 +638,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 
 /*testing*/
-/*--
-Author: W3layouts
-Author URL: https://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-/* reset */
+
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
@@ -1076,7 +1070,7 @@ img{max-width:100%;}
 @media (max-width:320px){
 	.main-body-left {
 		padding-right: 0;
-		/* padding-bottom: 1.5em; */
+		padding-bottom: 1.5em;
 	}
 	.main-bdy {
 		padding: 1.5em 1em;
@@ -1115,13 +1109,13 @@ img{max-width:100%;}
 
 
 
-.contact-wrapper {
+/* .contact-wrapper {
   margin: 0 auto;
   position: relative;
   max-width: 800px;
   font-family: "Monument Extended", Arial, Helvetica, sans-serif;
 
-}
+} */
 
 
 /* Begin Right Contact Page */
@@ -1181,10 +1175,11 @@ img{max-width:100%;}
 /* Social Media Icons */
 .social-media-list {
   position: relative;
-  font-size: 0.5 rem;
+  font-size: 3.5 rem;
   text-align: center;
   width: 100%;
   align-items: center;
+  
 }
 
 .social-media-list li a {
@@ -1194,7 +1189,8 @@ img{max-width:100%;}
 .social-media-list li {
   position: relative; 
   top: 0;
-  left: -20px;
+  top: 45px;
+  left: 5px;
   display: inline-block;
   height: 70px;
   width: 70px;
@@ -1205,9 +1201,10 @@ img{max-width:100%;}
   background-color:#fff;
   cursor: pointer; 
   transition: all .2s ease-in-out;
+  
 }
 
-.social-media-list li:after {
+/* .social-media-list li:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1229,11 +1226,11 @@ img{max-width:100%;}
   opacity: 1;  
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-}
+} */
 
-.social-media-list li:hover a {
+/* .social-media-list li:hover a {
   color: #fff;
-}
+} */
 
 hr {
   border-color: rgba(255,255,255,.8); ;
@@ -1299,11 +1296,7 @@ hr {
     line-height: 55px;
     font-size: 2rem;
   }
-  .social-media-list li:after {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-  }
+
   
 }
 
