@@ -23,7 +23,7 @@ html {
 
 
 .parallax-one {
-  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/web12.jpg) no-repeat center;
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/web1.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 516px;
@@ -70,6 +70,22 @@ html {
   bottom: 0;
 }
 
+.parallax-four {
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/web12.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 516px;
+  width: 100%;
+  transform-origin: center center 0;
+  z-index: -100;
+  min-height: 100%;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .header-one, .header-two, .header-three {
 
   text-align: center;
@@ -84,7 +100,7 @@ html {
   /* transform: translate(-50%, -50%); */
 }
 
-.parallax-one p, .parallax-two p, .parallax-three p {
+.parallax-one p, .parallax-two p, .parallax-three p, .parallax-four p {
 
   text-align: center;
   padding-top: 250px;
@@ -238,18 +254,12 @@ margin: auto;
 
 }
 
-/* #rect {
-background:url(../img/2002.png) center no-repeat;
-} */
-
 .responsive {
 width: 100%;
 height: auto;
 }
-
-
-
-
+/*start*/
+/*end*/
 #about img{
 width: 180px;
 }
